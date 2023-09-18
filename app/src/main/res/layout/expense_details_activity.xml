@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/cool_gray"
+    android:gravity="top"
+    tools:context=".ExpenseDetailsActivity">
+
+    <!-- Title Field -->
+    <EditText
+        android:id="@+id/title_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:hint="@string/title"
+        android:textSize="35dp"
+        android:inputType="text"
+        android:maxLines="1"
+
+        android:textColor="@color/rich_gray"
+        android:textColorHint="@color/gunmetal_gray"
+        android:background="@color/white">
+
+    </EditText>
+
+    <!-- Description Field -->
+    <EditText
+        android:id="@+id/desc_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:layout_below="@id/title_entry"
+        android:hint="@string/description"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:maxLines="3"
+
+        android:textColor="@color/rich_gray"
+        android:textColorHint="@color/light_gunmetal_gray"
+        android:background="@color/white">
+
+    </EditText>
+
+    <!-- Price Field -->
+    <EditText
+        android:id="@+id/price_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:layout_below="@id/desc_entry"
+        android:hint="@string/start_price"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+
+        android:textColor="@color/rich_gray"
+        android:textColorHint="@color/light_gunmetal_gray"
+        android:background="@color/white">
+
+    </EditText>
+
+</RelativeLayout>

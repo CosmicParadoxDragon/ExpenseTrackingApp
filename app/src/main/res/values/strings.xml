@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExpenseTrackingApp</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="done">Done</string>
+    <string name="title">Title</string>
+    <string name="start_price">00.00</string>
+    <string name="description">Description...</string>
+    <string name="empty_section">Empty Section</string>
+    <string name="sample_price">$200.00</string>
+</resources>
