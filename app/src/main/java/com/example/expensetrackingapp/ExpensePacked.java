@@ -7,6 +7,12 @@ public class ExpensePacked {
         mCost = 0.0f;
         mCostString = "";
     }
+    public ExpensePacked(String name, String desc, String costString) {
+        mName = name;
+        mDesc = desc;
+        mCostString = costString;
+        mCost = Float.parseFloat(costString);
+    }
     private String mName;
     private String mDesc;
     private String mCostString;

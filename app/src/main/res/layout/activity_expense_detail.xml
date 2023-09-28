@@ -9,21 +9,24 @@
     tools:context=".ExpenseDetails">
 
     <TextView
-        android:id="@+id/title_entry"
+        android:id="@+id/title_in_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TextView>
+    <TextView
+        android:id="@+id/desc_in_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TextView>
+    <TextView
+        android:id="@+id/cost_in_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
     </TextView>
 
-    <Button
-        android:id="@+id/done_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_centerInParent="true"
-        android:text="@string/done"
-        android:onClick="Done">
 
-    </Button>
 
 </RelativeLayout>

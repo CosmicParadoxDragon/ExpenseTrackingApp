@@ -45,7 +45,7 @@
 
     </EditText>
 
-    <!-- Price Field -->
+    <!-- Cost Field -->
     <EditText
         android:id="@+id/price_entry"
         android:layout_width="match_parent"
@@ -64,4 +64,14 @@
 
     </EditText>
 
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/price_entry"
+        android:text="@string/done"
+        android:onClick="Done">
+
+    </Button>
 </RelativeLayout>
