@@ -10,7 +10,7 @@ public class ExpensePacked {
     public ExpensePacked(String name, String desc, String costString) {
         mName = name;
         mDesc = desc;
-        mCostString = costString;
+        mCostString = "$ " + costString;
         mCost = Float.parseFloat(costString);
     }
     private String mName;
@@ -19,7 +19,7 @@ public class ExpensePacked {
     private float mCost;
     void setName (String name) { mName = name; }
     void setDesc (String desc) { mDesc = desc; }
-    void setCost (String cost) { mCostString = cost; mCost = Float.parseFloat(cost); }
+    void setCost (String cost) { mCostString = "$" + cost; mCost = Float.parseFloat(cost); }
     String getName () { return mName; }
     String getDesc () { return mDesc; }
     String getStringCost () { return mCostString; }

@@ -12,4 +12,35 @@
     <color name="light_blue_600">#FF039BE5</color>
     <color name="gray_400">#FFBDBDBD</color>
     <color name="gray_600">#FF757575</color>
+
+    <!-- Color Palette 1 -->
+
+    <color name="lapis_lazuli">#05668D</color>
+    <color name="UCLA_blue">#427AA1</color>
+    <color name="alice_blue">#EBF2FA</color>
+    <color name="asparagus">#679436</color>
+    <color name="apple_green">#A5BE00</color>
+
+    <!-- Color Palette 2 -->
+
+    <color name="crust">#171738</color>
+    <color name="russian_violet">#23174C</color>
+    <color name="mantle">#2E1760</color>
+    <color name="persian_indigo">#311D83</color>
+    <color name="accent">#3423A6</color>
+    <color name="list_item_background">#5352B0</color>
+    <color name="button_color">#7180B9</color>
+
+    <!-- Color Palette 3 -->
+    <color name="step_down_background_color">#42314F</color>
+    <color name="background_color">#493657</color>
+    <color name="step_up_background_color">#6B486B</color>
+    <color name="dark_text_color">#8C5A7E</color>
+    <color name="module_color">#CE7DA5</color>
+    <color name="secondary_module_color">#AD6C92</color>
+    <color name="inner_module_color">#C6B1B2</color>
+    <color name="highlight_color">#BEE5BF</color>
+    <color name="light_text_color">#DFF3E4</color>
+    <color name="accent_color">#FFD1BA</color>
+
 </resources>

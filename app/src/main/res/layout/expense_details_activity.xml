@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
-    android:background="@color/cool_gray"
+    android:background="@color/step_up_background_color"
     android:gravity="top"
     tools:context=".ExpenseDetailsActivity">
 
@@ -14,15 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:hint="@string/title"
-        android:textSize="35dp"
+        android:textSize="30sp"
         android:inputType="text"
         android:maxLines="1"
 
-        android:textColor="@color/rich_gray"
-        android:textColorHint="@color/gunmetal_gray"
-        android:background="@color/white">
+        android:textColor="@color/light_text_color"
+        android:textColorHint="@color/accent_color"
+        android:background="@color/background_color">
 
     </EditText>
 
@@ -30,48 +31,71 @@
     <EditText
         android:id="@+id/desc_entry"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginBottom="10dp"
-
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:layout_below="@id/title_entry"
         android:hint="@string/description"
-        android:textSize="20dp"
-        android:inputType="text"
-        android:maxLines="3"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"
 
-        android:textColor="@color/rich_gray"
-        android:textColorHint="@color/light_gunmetal_gray"
-        android:background="@color/white">
+        android:textColor="@color/light_text_color"
+        android:textColorHint="@color/accent_color"
+        android:background="@color/background_color"
+        tools:ignore="Autofill">
 
     </EditText>
-
     <!-- Cost Field -->
-    <EditText
-        android:id="@+id/price_entry"
+    <LinearLayout
+        android:id="@+id/price_entry_line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-
         android:layout_below="@id/desc_entry"
-        android:hint="@string/start_price"
-        android:textSize="20dp"
-        android:inputType="numberDecimal"
-        android:maxLines="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="@string/dollar_sign"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/light_text_color"
+            android:textColorHint="@color/highlight_color"
+            android:background="@color/step_up_background_color">
 
-        android:textColor="@color/rich_gray"
-        android:textColorHint="@color/light_gunmetal_gray"
-        android:background="@color/white">
+        </TextView>
 
-    </EditText>
+        <EditText
+            android:id="@+id/price_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            android:hint="@string/numerical_placeholder"
+            android:textSize="40sp"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+
+            android:textColor="@color/light_text_color"
+            android:textColorHint="@color/accent_color"
+            android:background="@color/background_color"
+            tools:ignore="Autofill">
+
+        </EditText>
+    </LinearLayout>
 
     <Button
         android:id="@+id/done_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/price_entry"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/price_entry_line"
         android:text="@string/done"
-        android:onClick="Done">
 
+        android:textSize="20sp"
+        android:textColor="@color/dark_text_color"
+        android:backgroundTint="@color/accent_color">
     </Button>
 </RelativeLayout>
